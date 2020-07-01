@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h2>Course Registration Form</h2>
-<form action="action_page.php">
-<label>Full Name:</label>       
-<input type="text" name="Name" size="15"/> <br> <br>
-Phone Number :
-</label>
-<input type="text" name="country code"  value="+91" size="2"/> 
-<input type="text" name="Phone Number" size="10"/> <br> <br>
-Course :
-</label><br>
-<input type="radio" name="Bachelors"/> Bachelors <br>
-<input type="radio" name="Masters"/> Masters <br>
-<br>
-
-
-Subject Intrests:
-<br>
-  <input type="checkbox" id="vehicle1" name="vehicle1" >
-  <label for="vehicle1"> Course 1</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2">
-  <label for="vehicle2"> Course 2</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" >
-  <label for="vehicle3"> Course 3</label><br><br>
-
-Description:
-<br>
-<textarea cols="80" rows="5" value="address">  
-</textarea>  
-<br> <br> 
-  <input type="submit" value="Submit">
-
-<label>
-</form>
-</body>
+   <head>
+      <style>
+         /* unvisited link */
+         a:link {
+         background-color: lightgray;
+         color: black;
+         border: 1px solid black;
+         padding: 10px 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         }
+         /* visited link */
+         a:visited {
+         color: gold;
+         }
+         /* mouse over link */
+         a:hover {
+         color: hotpink;
+         }
+         /* selected link */
+         a:active {
+         color: blue;
+         }
+      </style>
+   </head>
+   <body style="background-color:lightgreen;">
+      <h2>Course Registration Form</h2>
+      <form action="action_page.php">
+         <label>Full Name:</label>       
+         <input type="text" name="Name" size="15"/> <br> <br>
+         Phone Number :
+         </label>
+         <input type="text" name="country code"  value="+91" size="2"/> 
+         <input type="text" name="Phone Number" size="10"/> <br> <br>
+         Course :
+         </label><br>
+         <input type="radio" name="Bachelors"/> Bachelors <br>
+         <input type="radio" name="Masters"/> Masters <br>
+         <br>
+         Subject Intrests:
+         <br>
+         <input type="checkbox" id="vehicle1" name="vehicle1" >
+         <label for="vehicle1"> Course 1</label><br>
+         <input type="checkbox" id="vehicle2" name="vehicle2">
+         <label for="vehicle2"> Course 2</label><br>
+         <input type="checkbox" id="vehicle3" name="vehicle3" >
+         <label for="vehicle3"> Course 3</label><br><br>
+         Description:
+         <br>
+         <textarea cols="80" rows="5" value="address">  
+         </textarea>  
+         <br> <br> 
+         <a href="action_page.php" target="_blank">Submit</a>
+         <label>
+      </form>
+   </body>
 </html>
